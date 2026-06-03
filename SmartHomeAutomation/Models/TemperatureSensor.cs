@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 using SmartHomeAutomation.Delegates;
 
-namespace SmartHomeAutomation.Models
+namespace SmartHomeAutomation.Sensors
 {
     public class TemperatureSensor
     {
-        private int _temprature;
+        private int _temperature;
 
         public event TempratureChangedHandler? TempratureChanged;
 
-        public void SetTemprature(int temprature)
+        public void SetTemperature(int temperature)
         {
-            _temprature = temprature;
+            _temperature = temperature;
 
-            Console.WriteLine($"Temperature Sensor: Current Temprature = {_temprature}°C");
+            Console.WriteLine(
+                $"\nTemperature Changed : {temperature}°C");
 
-            TempratureChanged?.Invoke(temprature);
+            TempratureChanged?.Invoke(temperature);
         }
 
-        public int GetTemprature()
+        public int GetTemperature()
         {
-            return _temprature;
+            return _temperature;
         }
-
     }
 }
