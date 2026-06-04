@@ -4,6 +4,7 @@ using SmartHomeAutomation.Sensors;
 
 namespace SmartHomeAutomation.Controllers
 {
+
     public class SmartHomeController
     {
         private readonly ILogger _logger;
