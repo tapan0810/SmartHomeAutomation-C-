@@ -12,7 +12,6 @@ namespace SmartHomeAutomation.Factories
         public static Device CreateDevice(
             string type,
             string name)
-
         {
             return type.ToLower() switch
             {
