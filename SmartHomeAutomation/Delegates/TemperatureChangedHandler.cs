@@ -6,5 +6,6 @@ using System.Threading.Tasks;
 
 namespace SmartHomeAutomation.Delegates
 {
-    public delegate void TempratureChangedHandler(int temprature);
+    public delegate void
+ TempratureChangedHandler(int temprature);
 }
